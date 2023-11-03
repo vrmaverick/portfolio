@@ -1,0 +1,60 @@
+/* src/Header.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #04364A;
+    color: #fff;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    /* padding: 0px,30px; */
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .nav-links li {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+    margin-right: 20px;
+    padding: 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .social-links {
+    display: flex;
+    align-items: center; /* Vertically align social icons */
+    margin-left: 20px; /* Adjust the left margin between nav and social links */
+  }
+  .social-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    padding: 1rem;
+  }
+  .social-icon {
+    font-size: 2rem;
+  }
+  .hover-text:hover {
+    color: #64CCC5; /* Change the color to the desired one when hovering */
+  }
+  
