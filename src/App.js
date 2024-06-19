@@ -4,6 +4,7 @@
 // #DAFFFB
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import ProjectSlider from './components/Project';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Header />
         <ProjectSlider />
+        <Footer />
       </div>
     </Router>
   );
