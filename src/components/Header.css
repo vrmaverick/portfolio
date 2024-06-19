@@ -57,4 +57,52 @@ header {
   .hover-text:hover {
     color: #64CCC5; /* Change the color to the desired one when hovering */
   }
-  
+  @media (max-width: 599px) {
+    .example-heading {
+        font-size: 1.5em;
+    }
+
+    .example-paragraph {
+        font-size: 0.9em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 100px) and (max-width: 400px){
+.profile-image{
+  display : none;
+}
+}
+@media (min-width: 300px) and (max-width: 767px) {
+    .heading {
+        display : none;
+        font-size: 1.75em;
+    }
+
+    .ico{
+        font-size: 0.95em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .heading {
+        /* display : none; */
+        font-size: 1.85em;
+    }
+
+    .ico {
+        font-size: 1em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .ico {
+        font-size: 1.1em;
+    }
+}

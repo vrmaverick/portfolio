@@ -1,0 +1,27 @@
+/* ProjectSlider.css */
+.project-slider {
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+  }
+  
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
