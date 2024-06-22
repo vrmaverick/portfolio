@@ -4,8 +4,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #04364A;
-    color: #fff;
+    background-color:#161A30;
+    /* color:#DFD0B8; */
   }
   
   .profile-image {
@@ -36,7 +36,7 @@ header {
   
   .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #B6BBC4;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -47,7 +47,7 @@ header {
   }
   .social-links a {
     text-decoration: none;
-    color: #fff;
+    color:#F0ECE5;
     margin-right: 10px;
     padding: 1rem;
   }
@@ -55,7 +55,7 @@ header {
     font-size: 2rem;
   }
   .hover-text:hover {
-    color: #64CCC5; /* Change the color to the desired one when hovering */
+    color:#F0ECE5; 
   }
   @media (max-width: 599px) {
     .example-heading {

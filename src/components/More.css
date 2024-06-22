@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    color: #fff;
+  }
+  
+  .project-list-container, .links-container {
+    width: 48%;
+    background-color: #B6BBC4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color:#04364A ;
+  }
+  
+  .project-list-title, .links-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .project-table th, .project-table td {
+    padding: 3px;
+    border: 1px solid #04364A;
+    text-align: left;
+  }
+  
+  .github-link {
+    color: #31304D;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .github-link:hover {
+    color: #F0ECE5 ;
+  }
+  
+  .links-list {
+    list-style: none;
+    font-size: 0.8rem;
+    padding: 0;
+  }
+  .Title{
+    font-size: 0.8rem;
+  }
+  
+  .links-list li {
+    margin: 10px 0;
+  }
+  
+  .download-link {
+    color: #31304D;
+    text-decoration: none;
+  }
+  
+  .download-link:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .project-list-container, .links-container {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

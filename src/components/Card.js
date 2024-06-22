@@ -55,7 +55,7 @@ const ProjectsGridComponent = () => {
           <div className="project-info">
             <h2 className="title">{project.title}</h2>
             <p>{project.description}</p>
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-link">
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="githublink">
               View Code
             </a>
           </div>

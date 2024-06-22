@@ -1,67 +1,78 @@
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-    background-color: #fff;
-    color: #fff;
-    border-radius: 10px;
-  }
-  
-  .project-card {
-    background-color: #04364A; 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  
-  .project-info h2 {
-    margin: 10px 0;
-    padding-bottom:5px;
-    font-size: 1.5rem;
-    /* text-decoration: underline; */
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.project-card {
+  background-color: #04364A;
+  padding: 20px;
+  border-radius: 25%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-image {
+  width: 50%;
+  height: auto;
+  border-radius: 75px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.4);
+  /* width: 100%; */
+  border-radius: 0px;
+  z-index: 1;
+}
+
+.project-info h2 {
+  margin: 10px 0;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  }
+}
 
-  
-  .project-info p {
-    font-size: 1rem;
-    margin: 10px 0;
-  }
-  
-  .github-link {
-    text-decoration: none;
-    color: #64CCC5; 
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .github-link:hover {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr; 
-    }
-  }
+.project-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
 
-  
+.githublink {
+  /* text-decoration: none; */
+  color: #64CCC5;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.githublink:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

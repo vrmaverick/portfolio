@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    background-color: #64CCC5;
-    color: rgb(0,0,0);
+    background-color: #31304D;
+    color: #F0ECE5;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
