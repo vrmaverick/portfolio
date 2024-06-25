@@ -2,6 +2,16 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './More.css';
+import java from '../images/java.svg';
+import python from '../images/python.png';
+import sk from '../images/sklearn.png';
+import tf from '../images/tf.svg';
+import sql from '../images/sql-server.png';
+import unity from '../images/unity.png';
+import azure from '../images/azure.png';
+import tailwind from '../images/tl.svg';
+import jsIcon from '../images/java-script.png';
+import reactIcon from '../images/atom.png';
 
 const projects = [
   {
@@ -16,18 +26,6 @@ const projects = [
     title: "PineScript based Stock Strategy for Bots",
     githubLink: "https://github.com/vrmaverick/Alpha-Stock"
   },
-//   {
-//     title: "Project 4",
-//     githubLink: "https://github.com/yourusername/project4"
-//   },
-//   {
-//     title: "Project 5",
-//     githubLink: "https://github.com/yourusername/project5"
-//   },
-//   {
-//     title: "Project 6",
-//     githubLink: "https://github.com/yourusername/project6"
-//   },
   {
     title: "Miscellaneous Python Mini-Projects",
     githubLink: "https://github.com/vrmaverick/Python_projects"
@@ -36,6 +34,18 @@ const projects = [
     title: "Shipment Bidding",
     githubLink: "https://github.com/vrmaverick/Shipment_bidding"
   },
+];
+const skills = [
+  { name: 'Python', icon: python },
+  { name: 'sklearn', icon: sk },
+  { name: 'Tensorflow', icon: tf },
+  { name: 'sql', icon: sql },
+  { name: 'azure', icon: azure },
+  { name: 'Unity', icon: unity },
+  { name: 'tailwind', icon: tailwind },
+  { name: 'JavaScript', icon: jsIcon },
+  { name: 'React', icon: reactIcon },
+  { name: 'Java', icon: java }
 ];
 
 const ProjectListComponent = () => {
@@ -69,18 +79,30 @@ const ProjectListComponent = () => {
         </table>
       </div>
       <div className="links-container" data-aos="fade-up">
-        <h2 className="links-title">Download Links</h2>
+        <h2 className="links-title">Reports</h2>
+        <div className='Down'>
         <ul className="links-list">
           <li>
-            <a href="/path/to/report1.pdf" target="_blank" className="download-link">Download Report 1</a>
+            {/* <p>Food Waste Management Report</p> */}
+            <a href="/path/to/report1.pdf" target="_blank" className="download-link" download>Food Waste Management Report</a>
           </li>
           <li>
-            <a href="/path/to/report2.pdf" target="_blank" className="download-link">Download Report 2</a>
+            <a href="/path/to/report2.pdf" target="_blank" className="download-link" download>Ai-based Obstacle Detction and Navigation Report</a>
           </li>
           <li>
-            <a href="/path/to/resume.pdf" target="_blank" className="download-link">Download Resume</a>
+            <a href="/path/to/resume.pdf" target="_blank" className="download-link" download>Ml based DeepFake Detection Report</a>
           </li>
         </ul>
+        </div>
+        <h2 className="links-title skills">Familiar with</h2>
+        <ul className="skills-list">
+        {skills.map((skill, index) => (
+          <li key={index} className="skill-item">
+            <img src={skill.icon} alt={`${skill.name} icon`} className="skill-icon" />
+            {/* {skill.name} */}
+          </li>
+        ))}
+      </ul>
       </div>
     </div>
   );

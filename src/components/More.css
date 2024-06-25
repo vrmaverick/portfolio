@@ -2,13 +2,16 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-image: url('../images/bg.avif'); Replace with your image URL */
+    background-size: cover;
+    background-position: center;
     color: #fff;
   }
   
   .project-list-container, .links-container {
     width: 48%;
-    background-color: #B6BBC4;
+    background-color: rgba(9, 38, 53,0.5);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -32,6 +35,9 @@
     padding: 3px;
     border: 1px solid #04364A;
     text-align: left;
+  }
+  .Down{
+    border: 1px solid #04364A;
   }
   
   .github-link {
@@ -60,6 +66,27 @@
   .download-link {
     color: #31304D;
     text-decoration: none;
+  }
+  .skills{
+    padding-top:10px;
+  }
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill-icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+    margin-right: 8px;
   }
   
   .download-link:hover {
