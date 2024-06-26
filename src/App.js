@@ -9,6 +9,7 @@ import ProjectSlider from './components/Project';
 import About from './components/About'
 import Card from './components/Card'
 import More from './components/More'
+import Contact from './components/Contact'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -17,9 +18,16 @@ function App() {
       <div className="App">
         <Header />
         <ProjectSlider />
+        <div id="about">
         <About />
+        </div>
+        <div id="project">
         <Card />
+        </div>
         <More />
+        <div id="contact">
+        <Contact />
+        </div>
         <Footer />
       </div>
     </Router>
