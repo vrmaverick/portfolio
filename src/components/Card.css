@@ -22,9 +22,10 @@
   position: relative;
   overflow: hidden;
 }
+
 .project-card:nth-child(even) {
   background-color: #5C8374;
-  color : #092635;
+  color: #092635;
 }
 
 .project-card:hover {
@@ -34,16 +35,16 @@
 .project-image {
   width: 50%;
   height: auto;
-  border-radius: 75px;
+  max-height: 150px; /* Ensure uniform height */
   object-fit: cover;
-  margin-bottom: 10px;
+  border-radius: 75px;
   transition: transform 0.3s ease, z-index 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .project-card:hover .project-image {
   transform: scale(1.4);
-  /* width: 100%; */
-  border-radius: 0px;
+  border-radius: 0;
   z-index: 1;
 }
 
@@ -65,19 +66,21 @@
 }
 
 .githublink {
-  /* text-decoration: none; */
   color: #9EC8B9;
   font-weight: bold;
   margin-top: 10px;
   transition: color 0.3s;
-  font-size: 0.75rem
+  font-size: 0.75rem;
 }
+
 .project-card:nth-child(even) .githublink {
   color: #092635;
 }
+
 .project-card:nth-child(even) .githublink:hover {
   color: #fff;
 }
+
 .githublink:hover {
   color: #fff;
 }

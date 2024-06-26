@@ -1,5 +1,6 @@
 // src/Header.js
 import React from "react";
+import { Link as ScrollLink } from 'react-scroll';
 import { Link } from "react-router-dom"; // Assuming you'll use React Router
 import "./Header.css";
 import profileImage from '../images/profile.png';
@@ -19,13 +20,19 @@ const Header = () => {
       <nav>
         <ul className="nav-links heading">
           <li>
-            <Link to="/about" className="hover-text">About Me</Link>
+          <ScrollLink to="about" smooth={true} duration={300} className="nav-link hover-text">
+          About Me
+          </ScrollLink>
           </li>
           <li>
-            <Link to="/contact" className="hover-text">Projects</Link>
+          <ScrollLink to="project" smooth={true} duration={300} className="nav-link hover-text">
+          Projects
+          </ScrollLink>
           </li>
           <li>
-            <Link to="/contact" className="hover-text">Contact</Link>
+          <ScrollLink to="contact" smooth={true} duration={300} className="nav-link hover-text">
+          Contact
+          </ScrollLink>
           </li>
         </ul>
       </nav>

@@ -1,17 +1,17 @@
 import React from 'react';
 import './Card.css';
-import projectImage1 from '../images/admin.png';
-import projectImage2 from '../images/admin.png';
-import projectImage3 from '../images/admin.png';
-import projectImage4 from '../images/admin.png';
-import projectImage5 from '../images/admin.png';
-import projectImage6 from '../images/admin.png';
+import projectImage1 from '../images/deep2.png';
+import projectImage2 from '../images/nav2.png';
+import projectImage3 from '../images/food2.png';
+import projectImage4 from '../images/loss-epoch.png';
+import projectImage5 from '../images/reval.png';
+import projectImage6 from '../images/invoice1.png';
 
 const projects = [
   {
     image: projectImage1,
     title: "Ai-Generated Image Detector",
-    description: "CNN based project Devloped in semester 6",
+    description: "CNN based project Devloped in semester 6,Which is able to detect the ai generated or morphed images with 96% testing accuracy ",
     githubLink: "https://github.com/vrmaverick/DeepFake_Detector"
   },
   {
@@ -23,19 +23,19 @@ const projects = [
   {
     image: projectImage3,
     title: "Food Waste Management System",
-    description: "Web application based on Wordpress and PHP developed in semester 3",
+    description: "Web application based on Wordpress and PHP developed in semester 3.The main purpose was to develop a platform that can connect NGO's with Food Donors",
     githubLink: "https://awintoursandtravels.com/zerowastage/"
   },
   {
     image: projectImage4,
     title: "RentalBike",
-    description: "ANN built for predicting the total count of bikes rented at a given time and scenario",
+    description: "ANN built for predicting the total count of bikes rented at a given time and scenario,Which can be further scaled and used by the company to change price of renting a bike dynamically",
     githubLink: "https://github.com/vrmaverick/RentalBike"
   },
   {
     image: projectImage5,
-    title: "Secondhand Car Evaluation",
-    description: "ML model to predict the depreciated cost of a car over various parameters.",
+    title: "Heart-Health",
+    description: "Data Analysis and, highly reliable Ml model trained on various medical examination parameters to detect Heart disease",
     githubLink: "https://github.com/vrmaverick/Car_Valuation"
   },
   {

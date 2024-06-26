@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './More.css';
@@ -12,6 +12,12 @@ import azure from '../images/azure.png';
 import tailwind from '../images/tl.svg';
 import jsIcon from '../images/java-script.png';
 import reactIcon from '../images/atom.png';
+import foodrepo from '../reports/Report.pdf'
+import airepo  from '../reports/mini_report.pdf'
+// import { Worker, Viewer } from '@react-pdf-viewer/core';
+import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const projects = [
   {
@@ -35,6 +41,7 @@ const projects = [
     githubLink: "https://github.com/vrmaverick/Shipment_bidding"
   },
 ];
+
 const skills = [
   { name: 'Python', icon: python },
   { name: 'sklearn', icon: sk },
@@ -52,6 +59,13 @@ const ProjectListComponent = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  const [pdfUrl, setPdfUrl] = useState('');
+  const defaultLayoutPluginInstance = defaultLayoutPlugin();
+
+  const handlePdfLinkClick = (url) => {
+    setPdfUrl(url);
+  };
 
   return (
     <div className="container">
@@ -79,30 +93,41 @@ const ProjectListComponent = () => {
         </table>
       </div>
       <div className="links-container" data-aos="fade-up">
-        <h2 className="links-title">Reports</h2>
+        <h2 className="links-title">View Reports</h2>
         <div className='Down'>
-        <ul className="links-list">
-          <li>
-            {/* <p>Food Waste Management Report</p> */}
-            <a href="/path/to/report1.pdf" target="_blank" className="download-link" download>Food Waste Management Report</a>
-          </li>
-          <li>
-            <a href="/path/to/report2.pdf" target="_blank" className="download-link" download>Ai-based Obstacle Detction and Navigation Report</a>
-          </li>
-          <li>
-            <a href="/path/to/resume.pdf" target="_blank" className="download-link" download>Ml based DeepFake Detection Report</a>
-          </li>
-        </ul>
+          <ul className="links-list">
+            <li>
+              <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer" onClick={() => handlePdfLinkClick(foodrepo)}>
+                Food Waste Management Report
+              </a>
+            </li>
+            <li>
+              <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}>
+                Ai-based Obstacle Detection and Navigation Report
+              </a>
+            </li>
+            <li>
+            <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}>
+                Ml based DeepFake Detection Report
+              </a>
+            </li>
+          </ul>
         </div>
         <h2 className="links-title skills">Familiar with</h2>
         <ul className="skills-list">
-        {skills.map((skill, index) => (
-          <li key={index} className="skill-item">
-            <img src={skill.icon} alt={`${skill.name} icon`} className="skill-icon" />
-            {/* {skill.name} */}
-          </li>
-        ))}
-      </ul>
+          {skills.map((skill, index) => (
+            <li key={index} className="skill-item">
+              <img src={skill.icon} alt={`${skill.name} icon`} className="skill-icon" />
+            </li>
+          ))}
+        </ul>
+        {/* {pdfUrl && (
+          <div style={{ height: '750px' }}>
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+              <Viewer fileUrl={pdfUrl} plugins={[defaultLayoutPluginInstance]} />
+            </Worker>
+          </div>
+        )} */}
       </div>
     </div>
   );

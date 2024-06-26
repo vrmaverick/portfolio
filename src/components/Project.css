@@ -13,4 +13,37 @@
     font-size: 1.1rem;
     /* white-space: wrap; */}
   }
+  .image-container {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 2xl;
+    transition: background 0.5s;
+  }
+  
+  .group-hover .hidden {
+    display: block;
+  }
+  
+  .group-hover .block {
+    display: none;
+  }
+  
+  .content-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 16px;
+    font-size: 2xl;
+    color: black;
+  }
+  
+  .center-content {
+    transition: all 0.5s;
+  }
+  
 
