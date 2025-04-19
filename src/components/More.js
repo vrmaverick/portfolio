@@ -12,6 +12,7 @@ import azure from '../images/azure.png';
 import tailwind from '../images/tl.svg';
 import jsIcon from '../images/java-script.png';
 import reactIcon from '../images/atom.png';
+import fakerepo from '../reports/DeepFake_Report.pdf'
 import foodrepo from '../reports/Report.pdf'
 import airepo  from '../reports/mini_report.pdf'
 // import { Worker, Viewer } from '@react-pdf-viewer/core';
@@ -107,7 +108,7 @@ const ProjectListComponent = () => {
               </a>
             </li>
             <li>
-            <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}>
+            <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(fakerepo)}>
                 Ml based DeepFake Detection Report
               </a>
             </li>
