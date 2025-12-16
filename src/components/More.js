@@ -12,9 +12,28 @@ import azure from '../images/azure.png';
 import tailwind from '../images/tl.svg';
 import jsIcon from '../images/java-script.png';
 import reactIcon from '../images/atom.png';
+import np from '../images/np.svg';
+import pd from '../images/pd.svg';
+import matplotlib from '../images/matplotlib.svg';
+import pytorch from '../images/pytorch.svg'; 
+import cv from '../images/ocv.svg';
+import psql from '../images/psql.svg'; 
+import mongo from '../images/mongo.svg';
+import gcp from  '../images/gcp.svg';
+import aws from  '../images/aws.svg';
+import git from  '../images/git.svg';
+import fapi from  '../images/FastAPI.svg';
+////////////////////
+// import fakerepo from '../reports/DeepFake_Report'
+// import edurepo from '../reports/DeepFake_Report.pdf'
+// import foodrepo from '../reports/Report.pdf'
+// import airepo  from '../reports/mini_report.pdf'
+
 import fakerepo from '../reports/DeepFake_Report.pdf'
+import edurepo from '../reports/DeepFake_Report.pdf'
 import foodrepo from '../reports/Report.pdf'
 import airepo  from '../reports/mini_report.pdf'
+////////////////
 // import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -22,12 +41,20 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const projects = [
   {
-    title: "PDF Short-Lister",
-    githubLink: "https://github.com/vrmaverick/PDF-ShortLister"
+    title: "Food Waste Mangement System",
+    githubLink: "https://github.com/vrmaverick/Food_management"
   },
   {
-    title: "Ml Based Heart Disease Predictor",
-    githubLink: "https://github.com/vrmaverick/HeartHealth"
+    title: "Sleep Tracker using Express.js",
+    githubLink: "https://github.com/vrmaverick/Sleep_tracker"
+  },
+  {
+    title: "Data Analysis Using Python Libraries",
+    githubLink: "https://github.com/vrmaverick/Data_Analysis_ML"
+  },
+  {
+    title: "PDF Short-Lister",
+    githubLink: "https://github.com/vrmaverick/PDF-ShortLister"
   },
   {
     title: "PineScript based Stock Strategy for Bots",
@@ -43,14 +70,26 @@ const projects = [
   },
 ];
 
+
+
 const skills = [
   { name: 'Python', icon: python },
   { name: 'sklearn', icon: sk },
+  { name: 'numpy', icon: np },//
+  { name: 'pandas', icon: pd },//
+  { name: 'matplotlib', icon: matplotlib},//
   { name: 'Tensorflow', icon: tf },
-  { name: 'sql', icon: sql },
+  { name: 'Pytorch', icon: pytorch }, //
+  { name: 'Opencv', icon: cv }, //
+  { name: 'Postgresql', icon: psql },//
+  { name: 'MongoDB', icon: mongo },//
   { name: 'azure', icon: azure },
+  { name: 'GCP', icon: gcp },//
+  { name: 'AWS', icon: aws },//
+  { name: 'Git', icon: git },//
+  { name: 'FastAPI', icon: fapi },//
   { name: 'Unity', icon: unity },
-  { name: 'tailwind', icon: tailwind },
+  // { name: 'tailwind', icon: tailwind },
   { name: 'JavaScript', icon: jsIcon },
   { name: 'React', icon: reactIcon },
   { name: 'Java', icon: java }
@@ -108,13 +147,18 @@ const ProjectListComponent = () => {
               </a>
             </li>
             <li>
-            <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(fakerepo)}>
-                Ml based DeepFake Detection Report
+            <a href={fakerepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(fakerepo)}>
+                ML based DeepFake Detection Report
+              </a>
+            </li>
+            <li>
+           <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}>
+                EduBoost: AI Tools For Educational Enhancement Report
               </a>
             </li>
           </ul>
         </div>
-        <h2 className="links-title skills">Familiar with</h2>
+        <h2 className="links-title skills">Skills</h2>
         <ul className="skills-list">
           {skills.map((skill, index) => (
             <li key={index} className="skill-item">

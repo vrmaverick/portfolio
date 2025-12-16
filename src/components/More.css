@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin-left: 9vw;
+    margin-right: 4vw;
     /* background-color: #fff; */
     /* background-image: url('../images/bg.avif'); Replace with your image URL */
     background-size: cover;
@@ -11,7 +13,7 @@
   
   .project-list-container, .links-container {
     width: 48%;
-    background-color: rgba(9, 38, 53,0.5);
+    background-color: #F0ECE5;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -21,7 +23,7 @@
   .project-list-title, .links-title {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
   }
   
@@ -42,7 +44,7 @@
   
   .github-link {
     color: #31304D;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-decoration: none;
   }
   
@@ -52,11 +54,11 @@
   
   .links-list {
     list-style: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 0;
   }
   .Title{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   
   .links-list li {

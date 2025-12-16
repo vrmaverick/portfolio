@@ -1,7 +1,7 @@
 /* ProjectSlider.css */
 .project-slider {
     width: 100%;
-    max-width: 800px; /* Adjust the max-width as needed */
+    max-width: 100vw; /* Adjust the max-width as needed */
     margin: 0 auto;
   }
   
@@ -24,4 +24,45 @@
   .prev {
     left: 10px;
   }
+  .banner-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;      /* fills screen, may crop */
+  background-position: center;
+}
+
+.caption-overlay {
+  position: absolute;
+  left: 50%;
+  bottom: 8%;                     /* move up from bottom */
+  transform: translateX(-50%);
+  max-width: 80%;
+  padding: 14px 22px;
+  background: rgba(0, 0, 0, 0.6);  /* translucent dark panel */
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  backdrop-filter: blur(4px);      /* subtle glass effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: adjust for small screens */
+@media (max-width: 640px) {
+  .caption-overlay {
+    bottom: 5%;
+    max-width: 90%;
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+}
+
   

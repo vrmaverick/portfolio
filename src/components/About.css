@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    background-color: #9EC8B9;
-    color: #1B4242;
+    background-color: #274C77;
+    color: #F2F6FC;
     flex-wrap: wrap; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -12,7 +12,7 @@
   
   .about-me-photo {
     flex: 0 0 30%;
-    max-width: 20%;
+    max-width: 30%;
     padding: 20px;
   }
   
@@ -42,7 +42,7 @@
   }
   
   .about-me-text p {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
   
@@ -68,4 +68,5 @@
       font-size: 1rem;
     }
   }
+  
   

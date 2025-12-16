@@ -10,6 +10,7 @@ import About from './components/About'
 import Card from './components/Card'
 import More from './components/More'
 import Contact from './components/Contact'
+import ExperienceComponent from './components/Experience'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
         <div id="project">
         <Card />
         </div>
-        <More />
+        <More />  
+        <ExperienceComponent />  
         <div id="contact">
         <Contact />
         </div>
