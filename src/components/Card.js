@@ -4,7 +4,7 @@ import { useState } from 'react';
 import projectImage1 from '../images/deep2.png';
 import projectImage2 from '../images/nav2.png';
 import projectImage3 from '../images/Edu-1.jpeg';
-import projectImage4 from '../images/bike1.png';
+import projectImage4 from '../images/bike.png';
 import projectImage5 from '../images/YT_1.png';
 import projectImage6 from '../images/Fin-1.png';
 import projectImage7 from '../images/car_val_1.png';

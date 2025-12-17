@@ -80,7 +80,7 @@ const Header = () => {
       </div>
 
       {/* Desktop nav */}
-      <nav className="nav-desktop">
+      {/* <nav className="nav-desktop">
         <ul className="nav-links">
           <li>
             <ScrollLink
@@ -113,7 +113,62 @@ const Header = () => {
             </ScrollLink>
           </li>
         </ul>
-      </nav>
+      </nav> */}
+      <nav className="nav-desktop">
+  <ul className="nav-links">
+    <li>
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+      >
+        About
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="project"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+      >
+        Projects
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="experience"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+      >
+        Experience
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="resume"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+      >
+        Resume
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="contact"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+      >
+        Contact
+      </ScrollLink>
+    </li>
+  </ul>
+</nav>
+
 
       {/* Social icons */}
       <div className="social-links">
@@ -159,7 +214,7 @@ const Header = () => {
       </button>
 
       {/* Mobile dropdown */}
-      <nav className={`nav-mobile ${isOpen ? "show" : ""}`}>
+      {/* <nav className={`nav-mobile ${isOpen ? "show" : ""}`}>
         <ul>
           <li>
             <ScrollLink
@@ -195,7 +250,67 @@ const Header = () => {
             </ScrollLink>
           </li>
         </ul>
-      </nav>
+      </nav> */}
+      <nav className={`nav-mobile ${isOpen ? "show" : ""}`}>
+  <ul>
+    <li>
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+        onClick={closeMenu}
+      >
+        About
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="project"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+        onClick={closeMenu}
+      >
+        Projects
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="experience"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+        onClick={closeMenu}
+      >
+        Experience
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="resume"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+        onClick={closeMenu}
+      >
+        Resume
+      </ScrollLink>
+    </li>
+    <li>
+      <ScrollLink
+        to="contact"
+        smooth={true}
+        duration={300}
+        className="nav-link"
+        onClick={closeMenu}
+      >
+        Contact
+      </ScrollLink>
+    </li>
+  </ul>
+</nav>
+
     </header>
   );
 };
