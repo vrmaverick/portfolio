@@ -17,6 +17,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="header-spacer" style={{ marginBottom: "7vh", backgroundColor: "rgba(220, 0, 0, 0.75)" }}></div>
         <Header />
         <ProjectSlider />
         <div id="about">
