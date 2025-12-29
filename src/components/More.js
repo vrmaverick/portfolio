@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './More.css';
@@ -100,9 +100,11 @@ const ProjectListComponent = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const handlePdfLinkClick = (url) => {
-    setPdfUrl(url);
-  };
+  // const [pdfUrl, setPdfUrl] = useState('');
+  // // const defaultLayoutPluginInstance = defaultLayoutPlugin();
+  // const handlePdfLinkClick = (url) => {
+  //   setPdfUrl(url);
+  // };
 
   return (
     <div className="container">
