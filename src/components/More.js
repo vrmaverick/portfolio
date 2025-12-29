@@ -100,9 +100,6 @@ const ProjectListComponent = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  const [pdfUrl, setPdfUrl] = useState('');
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
-
   const handlePdfLinkClick = (url) => {
     setPdfUrl(url);
   };
