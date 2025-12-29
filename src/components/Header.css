@@ -288,3 +288,44 @@
     width: min(1150px, 90%);
   }
 }
+
+/* Make children share space */
+.header-left,
+.nav-desktop,
+.social-links {
+  flex: 0 1 auto;
+}
+
+/* Let nav shrink and wrap instead of overflowing */
+.nav-desktop {
+  flex: 1 1 0;
+  overflow: hidden;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Prevent flex items from forcing overflow */
+.header {
+  min-width: 0;
+}
+
+/* Tablet-specific layout (768–1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    width: 100%;
+    padding-inline: 1rem;
+  }
+
+  /* Option A: hide social icons on tablet */
+  .social-links {
+    display: none;
+  }
+
+  /* Option B: or shrink spacing if you want to keep them */
+  /* .nav-links { gap: 1.25rem; }
+     .social-links a { width: 30px; height: 30px; } */
+}
+

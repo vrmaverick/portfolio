@@ -320,6 +320,8 @@ const projects = [
 
 const ProjectsGridComponent = () => {
   return (
+    <>
+    <h1 className="project-title">Projects</h1>
     <div className="projects-grid">
       {projects.map((project, index) => (
         <div key={index} className="project-card">
@@ -335,6 +337,7 @@ const ProjectsGridComponent = () => {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

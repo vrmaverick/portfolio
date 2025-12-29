@@ -217,3 +217,11 @@
     padding: 10px;
   }
 }
+
+.project-title{
+  /* background: rgba(5, 14, 60, 0.6); */
+  background: radial-gradient(circle at top left, #050E3C 0, #020617 55%, #050E3C 100%);
+  margin-bottom: 0px;
+  color: white;
+  font-size: 2rem;
+}

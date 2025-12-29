@@ -5,14 +5,14 @@ import "./ProjectSlider.css";  // make sure the name matches
 
 import image4 from "../images/Forecast.png";
 import image2 from "../images/nav3.png";
-import image1 from "../images/deep1.png";
+// import image1 from "../images/deep1.png";
 import image3 from "../images/food1.png";
 
 function ProjectSlider() {
   const slides = [
     { url: image4, content: <h3 className="desc">Expense Forecasting using Ensemble Modelling</h3> },
     { url: image2, content: <h3 className="desc">Simulation of AI-Based Obstacle Avoidance And Navigation Algorithms</h3> },
-    { url: image1, content: <h3 className="desc">DeepFake Image Detection hosted on Azure Cloud</h3> },
+    // { url: image1, content: <h3 className="desc">DeepFake Image Detection hosted on Azure Cloud</h3> },
     { url: image3, content: <h3 className="desc">Food Waste Management System used To connect Donors to NGO's locally</h3> },
   ];
 
