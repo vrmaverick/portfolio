@@ -77,8 +77,7 @@ function ProjectSlider() {
 <div className="caption-overlay">
   {slides[currentIndex].content}
 </div>
-
-  // </div>
+</div>
   );
 }
 

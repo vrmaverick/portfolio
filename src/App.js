@@ -11,7 +11,7 @@ import Card from './components/Card'
 import More from './components/More'
 import Contact from './components/Contact'
 import ExperienceComponent from './components/Experience'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 
 function App() {
   return (

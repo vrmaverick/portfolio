@@ -44,7 +44,7 @@ const education = [
 ];
 
 // Replace this URL with your actual hosted resume PDF
-const RESUME_URL = "https://github.com/vrmaverick/portfolio/blob/main/src/reports/Resume.pdf"; // or Google Drive preview link [web:92][web:95]
+// const RESUME_URL = "https://github.com/vrmaverick/portfolio/blob/main/src/reports/Resume.pdf"; // or Google Drive preview link [web:92][web:95]
 
 const ExperienceComponent = () => {
   useEffect(() => {
