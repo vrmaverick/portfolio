@@ -1,15 +1,34 @@
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-left: 9vw;
-    margin-right: 4vw;
+    /* margin-left: 9vw; */
+    /* margin-right: 4vw; */
     /* background-color: #fff; */
     /* background-image: url('../images/bg.avif'); Replace with your image URL */
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
     color: #fff;
-  }
+  } */
+
+  .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  /* New lines */
+  max-width: 1200px;      /* or any width that fits your design */
+  width: 100%;
+  margin: 0 auto;         /* centers the container */
+  box-sizing: border-box; /* keeps padding inside width */
+
+  /* Optional background */
+  /* background-image: url('../images/bg.avif'); */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
   
   .project-list-container, .links-container {
     width: 48%;
