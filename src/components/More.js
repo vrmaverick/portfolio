@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import {useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './More.css';
@@ -35,7 +35,7 @@ import foodrepo from '../reports/Report.pdf'
 import airepo  from '../reports/mini_report.pdf'
 ////////////////
 // import { Worker, Viewer } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
+// import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
