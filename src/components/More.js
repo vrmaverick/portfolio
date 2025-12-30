@@ -136,22 +136,26 @@ const ProjectListComponent = () => {
         <div className='Down'>
           <ul className="links-list">
             <li>
-              <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer" onClick={() => handlePdfLinkClick(foodrepo)}>
+              {/* <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer" onClick={() => handlePdfLinkClick(foodrepo)}> */}
+              <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer">
                 Food Waste Management Report
               </a>
             </li>
             <li>
-              <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}>
+              <a href={airepo} target="_blank"  rel="noreferrer" className="download-link">
+              {/* <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}> */}
                 Ai-based Obstacle Detection and Navigation Report
               </a>
             </li>
             <li>
-            <a href={fakerepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(fakerepo)}>
+            <a href={fakerepo} target="_blank"  rel="noreferrer" className="download-link">
+            {/* <a href={fakerepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(fakerepo)}> */}
                 ML based DeepFake Detection Report
               </a>
             </li>
             <li>
-           <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}>
+           <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link">
+           {/* <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}> */}
                 EduBoost: AI Tools For Educational Enhancement Report
               </a>
             </li>
