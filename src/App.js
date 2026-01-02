@@ -9,7 +9,7 @@ import ProjectSlider from './components/Project';
 import About from './components/About'
 import Card from './components/Card'
 import More from './components/More'
-import Contact from './components/Contact'
+// import Contact from './components/Contact'
 import ExperienceComponent from './components/Experience'
 import { BrowserRouter as Router} from "react-router-dom";
 
