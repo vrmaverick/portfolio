@@ -28,9 +28,9 @@ function App() {
         </div>
         <More />  
         <ExperienceComponent />  
-        <div id="contact">
-        <Contact />
-        </div>
+        {/* <div id="contact"> */}
+        {/* <Contact /> */}
+        {/* </div> */}
         <Footer />
       </div>
     </Router>
