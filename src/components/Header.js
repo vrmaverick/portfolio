@@ -157,14 +157,9 @@ const Header = () => {
       </ScrollLink>
     </li>
     <li>
-      <ScrollLink
-        to="contact"
-        smooth={true}
-        duration={300}
-        className="nav-link"
-      >
+      <a href="mailto:vedant.ranade.26@gmail.com">
         Contact
-      </ScrollLink>
+      </a>
     </li>
   </ul>
 </nav>
