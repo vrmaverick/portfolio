@@ -157,7 +157,7 @@ const Header = () => {
       </ScrollLink>
     </li>
     <li>
-      <a href="mailto:vedant.ranade.26@gmail.com">
+      <a className="nav-link" href="mailto:vedant.ranade.26@gmail.com">
         Contact
       </a>
     </li>
@@ -293,7 +293,7 @@ const Header = () => {
       </ScrollLink>
     </li>
     <li>
-      <a href="mailto:vedant.ranade.26@gmail.com">
+      <a className="nav-link" href="mailto:vedant.ranade.26@gmail.com">
         Contact
       </a>
     </li>
