@@ -15,6 +15,23 @@ import projectImage11 from '../images/reval.png';
 import projectImage12 from '../images/invoice1.png';
 
 const moreDetails = [
+[
+  {
+    label: "Key Features",
+    content:
+      "Automatically categorizes raw transaction data (date, description, amount) into spending categories using ML-driven rules; Generates per-category spend summaries and visualizations to highlight dominant expense patterns; Supports loading CSV exports from banks/wallets for fast end-to-end analysis."
+  },
+  {
+    label: "Tech Stack",
+    content:
+      "Python for data processing and modeling; Pandas and NumPy for cleaning, feature engineering, and aggregation; scikit-learn for training and evaluating the expense categorization model; Jupyter/CLI scripts for running the full pipeline."
+  },
+  {
+    label: "Results",
+    content:
+      "Significantly reduces manual effort required to tag expenses; Produces consistent category labels across different statement formats; Easily extensible pipeline to plug in new models, features, or downstream dashboards (e.g., Streamlit/BI tools)."
+  }
+]
   [
     {
       label: "Key Features",
@@ -242,6 +259,12 @@ const Dropdown = ({ details }) => {
 };
 
 const projects = [
+  {
+    image: projectImage1,
+    title: "Mint-Sage: AI for Personal finanace management ",
+    description: "Ensemble models for Forecasting and Categorization, LLM Agent for optimizing finances, End to end platform for users deployed protoype on Streamlit.",
+    githubLink: "https://github.com/vrmaverick/Expense-Categorization"
+  },
   {
     image: projectImage1,
     title: "Deepfake Image Detection",
