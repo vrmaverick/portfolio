@@ -85,7 +85,7 @@ const moreDetails = [
     content:
       "Significantly reduces manual effort required to tag expenses; Produces consistent category labels across different statement formats; Easily extensible pipeline to plug in new models, features, or downstream dashboards (e.g., Streamlit/BI tools)."
   }
-]
+],
   [
     {
       label: "Key Features",
@@ -116,7 +116,7 @@ const moreDetails = [
     {
       label: "Results",
       content: "Benchmarked multiple AI algorithms across key performance metrics for robustness"
-    },
+    }
     
   ],
   [
