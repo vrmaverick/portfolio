@@ -31,6 +31,7 @@ import fapi from  '../images/FastAPI.svg';
 
 import fakerepo from '../reports/DeepFake_Report.pdf'
 import edurepo from '../reports/DeepFake_Report.pdf'
+import mintasage from '../reports/DeepFake_Report.pdf'
 import foodrepo from '../reports/Report.pdf'
 import airepo  from '../reports/mini_report.pdf'
 ////////////////
@@ -136,15 +137,15 @@ const ProjectListComponent = () => {
         <div className='Down'>
           <ul className="links-list">
             <li>
-              {/* <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer" onClick={() => handlePdfLinkClick(foodrepo)}> */}
-              <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer">
-                Food Waste Management Report
+           <a href={mintasage} target="_blank"  rel="noreferrer" className="download-link">
+           {/* <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}> */}
+                MintSage: AI based Expense management Report
               </a>
             </li>
             <li>
-              <a href={airepo} target="_blank"  rel="noreferrer" className="download-link">
-              {/* <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}> */}
-                Ai-based Obstacle Detection and Navigation Report
+           <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link">
+           {/* <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}> */}
+                EduBoost: AI Tools For Educational Enhancement Report
               </a>
             </li>
             <li>
@@ -154,9 +155,15 @@ const ProjectListComponent = () => {
               </a>
             </li>
             <li>
-           <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link">
-           {/* <a href={edurepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(edurepo)}> */}
-                EduBoost: AI Tools For Educational Enhancement Report
+              <a href={airepo} target="_blank"  rel="noreferrer" className="download-link">
+              {/* <a href={airepo} target="_blank"  rel="noreferrer" className="download-link"onClick={() => handlePdfLinkClick(airepo)}> */}
+                Ai-based Obstacle Detection and Navigation Report
+              </a>
+            </li>
+            <li>
+              {/* <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer" onClick={() => handlePdfLinkClick(foodrepo)}> */}
+              <a href={foodrepo} className="download-link" target="_blank"  rel="noreferrer">
+                Food Waste Management Report
               </a>
             </li>
           </ul>

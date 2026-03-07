@@ -13,8 +13,62 @@ import projectImage9 from '../images/intent.jpg.png';
 import projectImage10 from '../images/salary.png';
 import projectImage11 from '../images/reval.png';
 import projectImage12 from '../images/invoice1.png';
+import projectImage13 from '../images/mintsage.png';
+import projectImage14 from '../images/ocr-medical.webp';
+import projectImage15 from '../images/earth_doom.png';
 
 const moreDetails = [
+
+// [
+//   {
+//     label: "Key Features",
+//     content:
+//       "Reproducable Results, Comparitive Results bewteeen different models, currently working on building a workflow for grounded and reliable results."
+//   },{
+//     label: "Tech Stack",
+//     content:
+//       "Python for data processing; Pandas for summarizing results and aggregation;Jupyter/CLI scripts for running the full pipeline."
+//   },
+//   {
+//     label: "Results",
+//     content:
+//       " Sucessfult compared the Accuracy,latency and Security tradeoff of diffrent models"
+//   }
+// ]
+
+  [
+    {
+      label: "Key Features",
+      content:
+        "AI-powered multi-hazard catastrophic risk monitoring for any city; Aggregates real-time data on volcanoes, earthquakes, floods, forest fires, pandemics, and solar flares into composite risk scores; Interactive 3D globe and APO-DEX-style dashboard to visualize per-city threat levels and cascading disaster scenarios."
+    },
+    {
+      label: "Tech Stack",
+      content:
+        "Python 3.11 for data pipelines and threat modules; FastAPI and Flask for backend APIs; Groq Llama 3.3 70B with ChromaDB (176K+ documents) for LLM cascade reasoning; Frontend built with Vite, Three.js, Globe.gl, GSAP, and custom GLSL shaders for the 3D earth visualization."
+    },
+    {
+      label: "Results",
+      content:
+        "Unified cross-domain risk view that traditionally lives across siloed APIs; End-to-end pipeline from city input to multi-hazard analysis, LLM-driven cascade prediction, and interactive visualization; Validated scenarios against historical disaster data to improve robustness of risk insights."
+    }
+  ],
+
+ [
+    {
+      "label": "Key Features",
+      "content": "Reproducible results, comparative results between different models, currently working on building a workflow for grounded and reliable results."
+    },
+    {
+      "label": "Tech Stack",
+      "content": "Python for data processing; Pandas for summarizing results and aggregation; Jupyter/CLI scripts for running the full pipeline."
+    },
+    {
+      "label": "Results",
+      "content": "Successfully compared the accuracy, latency, and security tradeoff of different models."
+    }
+  ],
+
 [
   {
     label: "Key Features",
@@ -260,7 +314,19 @@ const Dropdown = ({ details }) => {
 
 const projects = [
   {
-    image: projectImage1,
+    image: projectImage15,
+    title: " !(Not)DoomsDay: AI Agent to detect and handle calamities",
+    description: "A Hackethon Project to forecast and model natural disaster's imapact and leverage LLM's for reasoning",
+    githubLink: "https://github.com/vrmaverick/Not_doomsday"
+  },
+  {
+    image: projectImage14,
+    title: "MyOCR: Reliable OCR on Personal and Medial Documents ",
+    description: "I have researched and testd multiple LLM's (Gemini, Grok, Ollama local llm) on a curated dataset that I created. protoyped on Streamlit.",
+    githubLink: "https://github.com/vrmaverick/Personal_Info_OCR"
+  },
+  {
+    image: projectImage13,
     title: "Mint-Sage: AI for Personal finanace management ",
     description: "Ensemble models for Forecasting and Categorization, LLM Agent for optimizing finances, End to end platform for users deployed protoype on Streamlit.",
     githubLink: "https://github.com/vrmaverick/Expense-Categorization"
@@ -353,7 +419,7 @@ const ProjectsGridComponent = () => {
             <h2 className="title">{project.title}</h2>
             <p>{project.description}</p>
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="githublink">
-              View Code
+              View Repo
             </a>
             <Dropdown details={moreDetails[index]} />
           </div>
